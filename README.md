@@ -56,7 +56,7 @@ my-react-app/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/react-user-data-cache.git
+   git clone https://github.com/Nuraj250/react-user-data-cache.git
    cd react-user-data-cache
    ```
 
@@ -89,9 +89,3 @@ my-react-app/
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-```
-
-### Note:
-- Replace `https://github.com/your-username/react-user-data-cache.git` with the actual repository URL after creating the repository on GitHub.
-- You might also want to include a `LICENSE` file in the repository if you plan to share it publicly.
