@@ -1,81 +1,97 @@
-# React Hooks Counter App
+# React User Data Cache
 
-A simple React application that demonstrates the usage of React hooks including `useState`, `useEffect`, `useContext`, and `useReducer`. This project includes a global counter that can be incremented or decremented using buttons.
+A React application demonstrating user data fetching with caching using custom hooks for efficient state management. This project showcases how to separate API calls, handle loading states, and cache data to improve performance.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Folder Structure](#folder-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [License](#license)
+
+## Overview
+
+This project is built to demonstrate the usage of multiple React hooks, such as `useState`, `useEffect`, `useCallback`, and `useMemo`, for fetching and caching user data from a mock API. The custom hook encapsulates data-fetching logic, making the code reusable and easier to maintain.
 
 ## Features
 
-- Manage global state with `useContext` and `useReducer`.
-- Increment and decrement counter values.
-- Easy to understand and modify for learning purposes.
+- Fetches user data with a simulated API call.
+- Caches fetched data to reduce redundant API requests.
+- Uses `useCallback` for memoizing data-fetching functions.
+- Uses `useMemo` for optimizing rendering of user details.
+- Provides navigation between user profiles.
+- Demonstrates separation of concerns with custom hooks and services.
 
-## Getting Started
+## Folder Structure
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+```
+my-react-app/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── components/
+│   │   ├── UserProfile.js
+│   │   └── App.js
+│   │
+│   ├── services/
+│   │   └── userService.js
+│   │
+│   ├── hooks/
+│   │   └── useFetchUserData.js
+│   │
+│   ├── index.js
+│   └── styles/
+│       └── UserProfile.css
+│
+├── package.json
+└── README.md
+```
 
-### Prerequisites
+## Installation
 
-- Node.js (v14 or higher)
-- npm (v6 or higher) or yarn (v1.22 or higher)
-
-### Installation
-
-1. Clone the repository:
-
+1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/react-hooks-counter-app.git
-   cd react-hooks-counter-app
+   git clone https://github.com/your-username/react-user-data-cache.git
+   cd react-user-data-cache
    ```
 
-2. Install dependencies:
-
+2. **Install the dependencies**:
    ```bash
    npm install
    ```
 
-   or if you prefer yarn:
-
-   ```bash
-   yarn install
-   ```
-
-3. Start the development server:
-
+3. **Start the development server**:
    ```bash
    npm start
    ```
 
-   or with yarn:
-
-   ```bash
-   yarn start
-   ```
-
-4. Open your browser and go to:
-
-   ```
-   http://localhost:3000
-   ```
-
-## Project Structure
-
-```
-/src
-  ├── Counter.js           # The Counter component with increment and decrement functionality
-  ├── CounterContext.js    # The context and reducer setup for global state management
-  └── App.js               # Main App component that wraps the Counter with the provider
-```
+   The app will open in your browser at `http://localhost:3000`.
 
 ## Usage
 
-- Click the "Increment" button to increase the counter value.
-- Click the "Decrement" button to decrease the counter value.
+- The app displays user information with a simulated API call.
+- Navigate between user profiles using the "Next User" and "Previous User" buttons.
+- The app fetches user data only when it’s not available in the cache, reducing unnecessary API calls.
+- Check the console to see when the data is being fetched or loaded from the cache.
 
-## Contributing
+## Technologies Used
 
-Contributions are welcome! If you have any suggestions or improvements, feel free to open a pull request.
+- **React**: Frontend library for building user interfaces.
+- **JavaScript**: Programming language for logic implementation.
+- **Custom Hooks**: Encapsulate and reuse logic across components.
+- **CSS**: Styling for components.
 
-1. Fork the repository.
-2. Create your feature branch: `git checkout -b feature/YourFeature`.
-3. Commit your changes: `git commit -m 'Add some feature'`.
-4. Push to the branch: `git push origin feature/YourFeature`.
-5. Open a pull request.
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+```
+
+### Note:
+- Replace `https://github.com/your-username/react-user-data-cache.git` with the actual repository URL after creating the repository on GitHub.
+- You might also want to include a `LICENSE` file in the repository if you plan to share it publicly.
