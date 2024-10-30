@@ -1,0 +1,21 @@
+/* src/styles/UserProfile.css */
+
+.user-profile {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  width: 300px;
+  margin: 16px auto;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.user-profile h2 {
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.user-profile p {
+  font-size: 16px;
+  color: #666;
+}
